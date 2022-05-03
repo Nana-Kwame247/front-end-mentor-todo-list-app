@@ -12,7 +12,11 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./script.js"></script>
 
     <title>Frontend Mentor | Todo app</title>
 
@@ -85,15 +89,31 @@
             <div class="todo-text checked">Cut the lawn</div>
           </div>
         </div>
-        <div class="todo-items-info"></div>
+        <div class="todo-items-info">
+          <div class="items-left">Items left</div>
+          <div class="items-statuses">
+            <span class="active">All</span>
+            <span>Active</span>
+            <span>Completed</span>
+          </div>
+          <div class="items-clear">
+            <span>Clear Completed</span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >. Coded by
+      <a href="https://github.com/Nana-Kwame247?tab=repositories">iKwame</a>.
+    </div>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="firebase.js"></script>
+    <script src="script.js"></script> -->
   </body>
 </html>
